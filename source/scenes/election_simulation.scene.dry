@@ -28,27 +28,26 @@ Q.workers_fdp = 0;
 Q.workers_greens = 0;
 Q.workers_afd = 5;
 
-Q.youth_spd = 65;
-Q.youth_linke = 20;
-Q.youth_cdu = 5;
-Q.youth_fdp = 0;
-Q.youth_greens = 0;
-Q.youth_afd = 5;
-Q.youth_other = 10;
+Q.youth_spd = 19;
+Q.youth_linke = 10;
+Q.youth_cdu = 25;
+Q.youth_fdp = 14;
+Q.youth_greens = 15;
+Q.youth_afd = 8;
 
-Q.retirees_spd = 65;
-Q.retirees_linke = 20;
-Q.retirees_cdu = 5;
-Q.retirees_fdp = 0;
-Q.retirees_greens = 0;
-Q.retirees_afd = 5;
+Q.retirees_spd = 25;
+Q.retirees_linke = 8;
+Q.retirees_cdu = 44;
+Q.retirees_fdp = 10;
+Q.retirees_greens = 5;
+Q.retirees_afd = 9;
 
-Q.rural_spd = 10;
-Q.rural_linke = 20;
-Q.rural_cdu = 5;
-Q.rural_fdp = 0;
-Q.rural_greens = 0;
-Q.rural_afd = 5;
+Q.rural_spd = 25;
+Q.rural_linke = 10;
+Q.rural_cdu = 65;
+Q.rural_fdp = 5;
+Q.rural_greens = 5;
+Q.rural_afd = 20;
 
 Q.unemployed_spd = 25;
 Q.unemployed_linke = 20;
@@ -57,19 +56,19 @@ Q.unemployed_fdp = 0;
 Q.unemployed_greens = 0;
 Q.unemployed_afd = 5;
 
-Q.catholics_spd = 15;
-Q.catholics_linke = 20;
-Q.catholics_cdu = 5;
-Q.catholics_fdp = 0;
-Q.catholics_greens = 0;
-Q.catholics_afd = 5;
+Q.catholics_spd = 18;
+Q.catholics_linke = 5;
+Q.catholics_cdu = 47;
+Q.catholics_fdp = 6;
+Q.catholics_greens = 6;
+Q.catholics_afd = 14;
 
-Q.muslims_spd = 15;
-Q.muslims_linke = 20;
-Q.muslims_cdu = 5;
-Q.muslims_fdp = 0;
+Q.muslims_spd = 13;
+Q.muslims_linke = 40;
+Q.muslims_cdu = 19;
+Q.muslims_fdp = 4;
 Q.muslims_greens = 0;
-Q.muslims_afd = 5;
+Q.muslims_afd = 0;
 !}
 go-to: election_algorithm
 set-jump: post_election
