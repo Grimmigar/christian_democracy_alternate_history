@@ -7,14 +7,12 @@ set-jump: post_election
 @2017
 on-arrival: {!
 Q.workers = 46; // industry and trade
-Q.youth = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.retirees = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
-Q.muslims = 30;
+Q.youth = 7; // young people, 18-21
+Q.retirees = 22; // old people
+Q.rural = 25; // people living in the rural areas
+Q.unemployed = 6.4;
+Q.catholics = 24;
+Q.muslims = 5;
 
 Q.classes = ['workers', 'youth', 'retirees', 'catholics', 'rural', 'unemployed', 'muslims'];
 Q.parties = ['spd', 'linke', 'cdu', 'fpd', 'greens', 'afd'];
@@ -84,11 +82,18 @@ Q.greens_r = Q.greens_votes;
 Q.afd_r = Q.afd_votes;
 
 Q.largest_party = 'CDU';
-if (Q.afd_r >= Q.spd_r && Q.afd_r >= Q.linke_r) {
+
+if (Q.afd_r >= Q.spd_r && Q.afd_r >= Q.linke_r && Q.afd_r >= Q.cdu_r) {
     Q.largest_party = 'AfD';
 }
-if (Q.linke_r >= Q.spd_r && Q.linke_r >= Q.afd_r) {
+if (Q.linke_r >= Q.spd_r && Q.linke_r >= Q.afd_r && Q.linke_r >= Q.cdu_r) {
     Q.largest_party = 'Die Linke';
+}
+if (Q.cdu_r >= Q.spd_r && Q.cdu_r >= Q.afd_r && Q.cdu_r >= Q.linke_r) {
+    Q.largest_party = 'CDU';
+}
+if (Q.spd_r >= Q.cdu_r && Q.spd_r >= Q.afd_r && Q.spd_r >= Q.linke_r) {
+    Q.largest_party = 'SPD';
 }
 
 // coalitions
